@@ -1,10 +1,9 @@
 # Load a pre-trained Hugging Face summarization pipeline and generate a summary from input text.
 
-# pyrefly: ignore [missing-import]
 from transformers import pipeline
 
 summarizer = pipeline(
-    task="summarization",
+    "summarization",
     model="facebook/bart-large-cnn"
 )
 
@@ -16,7 +15,7 @@ America became industrial and urban.
 
 summary = summarizer(
     long_text,
-    max_length=50,
+    max_length=40,
     min_length=30,
     do_sample=False
 )

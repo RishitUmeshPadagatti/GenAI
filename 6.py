@@ -1,6 +1,5 @@
 #  Use a pre-trained Hugging Face model to load a sentiment analysis pipeline and analyze input sentences.
 
-# pyrefly: ignore [missing-import]
 from transformers import pipeline
 
 sentiment_pipeline = pipeline("sentiment-analysis")
